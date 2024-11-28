@@ -18,7 +18,7 @@ Next-Key Lock：Record Lock + Gap Lock 的组合，锁定一个范围，并且�
 
 举例：
 
-![image.png](assets/image.png)
+![image.png](./assets/image.png)
 
 **如果等值查询命中：`select * from XX where id = 5 for update`**
 
@@ -71,7 +71,7 @@ Next-Key Lock：Record Lock + Gap Lock 的组合，锁定一个范围，并且�
 
 ## 非唯一索引等值查询
 
-![image.png](assets/image.png?t=1732780209819)
+![image.png](./assets/image.png?t=1732780209819)
 ### 不命中
 **二级索引有序扫描，当扫描到第一个不符合的记录时退化成间隙锁**
 ```select * from xxx where shop_id = 5```
